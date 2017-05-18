@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		li.active[role="tab"] a {
+			color: red;
+		}
+		div[role="tabpanel"] {
+			display: none;
+		}
+		div.active[role="tabpanel"] {
+			display: block;
+		}
+	</style>
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.js"
+	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="tabContent">
+		<div class="tab">
+			<ul id="js-tabs" role="tablist">
+				<li role="tab" class="active"><a>tab1</a></li><!--
+				--><li role="tab"><a>tab2</a></li>
+			</ul>
+		</div>
+
+			<div id="js-tabContent">
+				<div role="tabpanel" class="active">
+					tabContent1
+				</div>
+				<div role="tabpanel">
+					tabContent2
+				</div>
+			</div>
+
+	</div>
+	<div id="r-toggleTab"
+		data-targetTab="#js-tabs"
+		data-targetTabContent="#js-tabContent">
+	</div>
+	<script src="./index.js"></script>
+
+</body>
+</html>
