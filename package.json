@@ -1,0 +1,42 @@
+{
+  "name": "renew-ichiba-ui-assets",
+  "version": "1.0.0",
+  "description": "This is for creating ui components for renewal projects. ",
+  "main": "index.js",
+  "scripts": {
+    "postcss_sp": "postcss ./src/css/mypage_order_sp.css -o ../_sp/css/mypage_order_sp.css -w",
+    "postcss_pc": "postcss ./src/css/mypage_order_pc.css -o ../_pc/css/mypage_order_pc.css -w",
+    "stylelint": "stylelint --config .stylelintrc _sp/src/css/**/*.css"
+  },
+  "repository": "https://shinya.takahashi@git.rakuten-it.com/scm/~shinya.takahashi/renewal_product_pc.git",
+  "author": "CWD Devteam",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "cssnext": "^1.8.4",
+    "csswring": "^5.1.1",
+    "express": "^4.15.2",
+    "google-closure-compiler": "*",
+    "gulp": "^3.9.1",
+    "gulp.spritesmith": "^6.4.0",
+    "jquery": "^1.12.4",
+    "jshint": "*",
+    "postcss": "^5.2.16",
+    "postcss-calc": "^5.3.1",
+    "postcss-cli": "^3.1.1",
+    "postcss-current-selector": "0.0.3",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-import": "^9.1.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "postcss-will-change": "^1.1.0",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-rscss": "^0.4.0",
+    "webpack": "^1.15.0",
+    "webpack-stream": "^3.2.0"
+  }
+}
